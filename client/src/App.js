@@ -6,6 +6,7 @@ function App() {
   const [data, dispatch] = useReducer(layoutReducer, layoutState);
   return (
     <Fragment>
+      
       <LayoutContext.Provider value={{ data, dispatch }}>
         <Routes />
       </LayoutContext.Provider>

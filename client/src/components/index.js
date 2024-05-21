@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Home,
   WishList,
   ProtectedRoute,
   AdminProtectedRoute,
@@ -10,13 +9,14 @@ import {
   ProductByCategory,
   CheckoutPage,
 } from "./shop";
+import Home from "./shop/home";
 import { DashboardAdmin, Categories, Products, Orders } from "./admin";
 import { UserProfile, UserOrders, SettingUser } from "./shop/dashboardUser";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 /* Routing All page will be here */
-const Routes = (props) => {
+const Routes = () => {
   return (
     <Router>
       <Switch>
